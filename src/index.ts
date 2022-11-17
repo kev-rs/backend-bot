@@ -2,7 +2,6 @@ import express, { Express, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
-// import dotenv from 'dotenv'
 
 const app: Express = express();
 app.use(cookieParser());
@@ -13,7 +12,7 @@ app.use(cookieParser());
 //   next();
 // });
 // app.use(cors());
-const port = process.env.PORT ?? 3002;
+const port = process.env.PORT ?? 3000;
 
 var corsOptions = {
   origin: 'http://localhost:3000',
