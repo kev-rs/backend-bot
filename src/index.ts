@@ -24,7 +24,7 @@ var corsOptions = {
 type ResType = { message: string };
 
 app.get('/api/hello', ( req: Request, res: Response<ResType> ) => {
-  res.status(200).send({ message: 'Hello from my first Backend - Node.js - Express.js server' })
+  res.status(200).send({ message: 'Helloouu this is a GET request :)' })
 })
 
 app.post('/api/hola', cors(corsOptions), ( req: Request, res: Response<ResType> ) => {
